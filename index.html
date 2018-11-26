@@ -9,6 +9,8 @@ use-site-title: true
 
 <p>To do this, I specialize in recommenders systems, natural language processing, and deploying machine learning models with user...</p>
 
+<hr width="65%">
+
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
@@ -25,7 +27,6 @@ use-site-title: true
     <p class="post-meta">
       Posted on {{ post.date | date: "%B %-d, %Y" }}
     </p>
-    <hr width="45%">
 
     <div class="post-entry-container">
       {% if post.image %}
