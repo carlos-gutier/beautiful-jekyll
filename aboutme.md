@@ -5,9 +5,9 @@ subtitle:
 ---
 - Finance Undergrad
 - Former non-profit manager
-- Interested in using Deep Learning and Computer Visualization to track that which is commonly overlooked by the human eye
+- Lamda School Data Science Graduate
 
-Hi, I'm Carlos Gutierrez, a data scientist focused on helping firms improve business logistics by applying machine learing and AI solutions. To do this, I specialize in computer vision applications, natural language processing, and deploying machine learning models with user interfaces.
+Hi, I'm Carlos Gutierrez, a data analyst focused on using Statistics, Python, SQL and Machine Learning algorithims to get insights and find solutions through data.... To do this, I specialize in computer vision applications, natural language processing, and deploying machine learning models with user interfaces.
 
 ### Recommenders
 I've learned techniques for the "cold start" problem - making recommendiations for new users without much information. Offline, salespeople build rapport, but online, how can you learn quickly? To explore this, I developed a ___ that learns your ___ in just 10 questions. I gained experience with___, using Python's scikit-learn and Suprise libraries.
