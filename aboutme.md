@@ -5,7 +5,7 @@ subtitle:
 ---
 - Finance Undergrad
 - Former non-profit manager
-- Lamda School Data Science Graduate
+- Lambda School Data Science Graduate
 
 Hi, I'm Carlos Gutierrez, a data analyst focused on using Statistics, Python, SQL and Machine Learning algorithims to get insights and find solutions through data.... To do this, I specialize in computer vision applications, natural language processing, and deploying machine learning models with user interfaces.
 
