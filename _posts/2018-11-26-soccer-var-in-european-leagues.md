@@ -24,13 +24,15 @@ Then I dug a little more to find more interesting things like players with most 
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-players.png" alt="Clutch Players Table"/>
 </p>
-<p align="center"><em>It’s not so easy even for prolific players to score at the end of a game to ensure their team wins. The ‘clutch score’ here measures not only if goals are score late in the game but how significant those goals are in order for their team to either not win or tie (not lose).</em></p>
+<p align="center"><em>It’s not so easy even for prolific players to score at the end of a game to ensure a win. The ‘clutch score’ here measures not only if goals are scored late in the game but also how significant those goals are in order for their team to either win or tie.</em></p>
 <br>
 
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-top.png" alt="Clutch Players Graph"/>
 </p>
+<blockquote>
 <p align="center"><em>Players with most clutch goals and their total goals last season.</em></p>
+</blockquote>
 
 Now here is when I really found out that it would take a lot more time than what I had available to concretely find those momentous clutch players. So I dug into the teams to see how if there could be something like a clutch team for the season. Again, I looked at goals that tied, broke ties, or seal a win in the last 15 minutes of each game and found that most of these are not the most popular.
 
