@@ -30,6 +30,7 @@ Then I dug a little more to find more interesting things like players with most 
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-top.png" alt="Clutch Players Graph"/>
 </p>
+
 <blockquote>
 <p align="center"><em>Players with most clutch goals and their total goals last season.</em></p>
 </blockquote>
