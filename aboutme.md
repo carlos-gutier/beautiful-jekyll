@@ -12,5 +12,5 @@ Hi, I'm Carlos Gutierrez, a Data Analyst focused on using Statistics, Python, SQ
 * **App to easily detect and identify prescription pills** — using images using user images and SQL databases.
 * **Supply-chain predictions** — predicting blood donations for a blood center based on previous donors to improve on supply chain.
 * **Finding and comparing trends in data** — historical temperature trends in the city of Houston versus global trends.
-* **Using simple statistics to remain competitive at lower cost** — recommendation system for trading *overvalued* players for *undervalued* in soccer teams.
+* **Using simple statistics to remain competitive at lower cost** — recommendation system for trading *overvalued* players for *undervalued* ones in soccer teams.
 * And others on the works...
