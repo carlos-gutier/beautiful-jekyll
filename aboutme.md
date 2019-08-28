@@ -3,19 +3,14 @@ layout: page
 title: About me
 subtitle: 
 ---
-- Finance Undergrad
-- Former non-profit manager
+- University of Houston Finance Undergrad
+- Former non-profit organization manager
 - Lambda School Data Science Graduate
 
-Hi, I'm Carlos Gutierrez, a data analyst focused on using Statistics, Python, SQL and Machine Learning algorithims to get insights and find solutions through data.... To do this, I specialize in computer vision applications, natural language processing, and deploying machine learning models with user interfaces.
+Hi, I'm Carlos Gutierrez, a Data Analyst focused on using Statistics, Python, SQL and Machine Learning algorithims to get insights and find solutions through data. My recent projects include a wide range of topics including:
 
-### Recommenders
-I've learned techniques for the "cold start" problem - making recommendiations for new users without much information. Offline, salespeople build rapport, but online, how can you learn quickly? To explore this, I developed a ___ that learns your ___ in just 10 questions. I gained experience with___, using Python's scikit-learn and Suprise libraries.
-
-### Natural Language Processing
-I'm experienced in scraping, processing, and analyzing ustructured text data with Python, including___
-
-### Deploying models
-I prototype in Jupyter Notebook, with Pandas to wrangle, Matplotlib to visualize, and Scikit-learn to model. Then I deploy interactive web apps to make models useful. I use Ploty Dash, Dash, a framework built on React, D3, and Flask.
-
-Managing an Non-Profit organization tought me to market and study target customers. I'd love to work with you to solve business problems using machine learning and AI.
+* **App to easily detect and identify prescription pills** — using images using user images and SQL databases.
+* **Supply-chain predictions** — predicting blood donations for a blood center based on previous donors to improve on supply chain.
+* **Finding and comparing trends in data** — historical temperature trends in the city of Houston versus global trends.
+* **Using simple statistics to remain competitive at lower cost** — recommendation system for trading *overvalued* players for *undervalued* in soccer teams.
+* And others on the works...
