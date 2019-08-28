@@ -14,7 +14,7 @@ Here’s a peak:
 </p>
 
 <blockquote>
-<p align="center"><em>DataFrame of goals in Spain’s La Liga 2017-2018 season.</em></p>
+<p align="center"><em>Above is the dataframe accounting for goals in Spain’s La Liga 2017-2018 season.</em></p>
 </blockquote>
 
 After spending hours cleaning the data, coming up with my little clutch score grading formula, digging deeper into scores and game results I found out that my little experiment would take a lot more time to produce some worthwhile conclusions about who are European soccer’s decisive players when the game is on the line.
@@ -44,7 +44,7 @@ Now here is when I really found out that it would take a lot more time than what
 </p>
 
 <blockquote>
-<p align="center"><em>These may be the clutch teams of the 2017-2018 season.</em></p>
+<p align="center"><em>These seem to have been the most clutch teams of the 2017-2018 season.</em></p>
 </blockquote>
 
 These are mostly lower budget teams (when compared to renown teams of Europe) that fight to win with what they have. Teams that challenge the *dream-team* like squads.
@@ -76,7 +76,7 @@ Barcelona, Real Madrid, and even Atletico de Madrid are the leaders in Spain’s
 </p>
 
 <blockquote>
-<p align="center"><em>These are four of the most thrilling teams to watch in Spain’s La Liga.</em></p>
+<p align="center"><em>These were four of the most thrilling teams in the 2017-2018 season of Spain’s La Liga.</em></p>
 </blockquote>
 
 Although I did not find what I sought after initially (and do aim to take the time to further research as time allows) the work did reward me with the lesson of not coming to data with preconceived ideas and a deeper appreciation for the game of soccer.
