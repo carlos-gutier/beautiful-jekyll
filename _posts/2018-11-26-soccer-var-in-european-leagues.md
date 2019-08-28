@@ -29,7 +29,10 @@ Then I dug a little more to find more interesting things like players with most 
 
 Now here is when I really found out that it would take a lot more time than what I had available to concretely find those momentous clutch players. So I dug into the teams to see how if there could be something like a clutch team for the season. Again, I looked at goals that tied, broke ties, or seal a win in the last 15 minutes of each game and found that most of these are not the most popular.
 
-![]()
+<p align="center">
+  <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-teams.png" alt="Most Clutch Teams"/>
+</p>
+
 
 Theas are mostly lower budget teams (when compared to renown teams of Europe) that fight to win with what they have. Teams that challenge the *dream-team* like squads.
 
@@ -39,7 +42,9 @@ Theas are mostly lower budget teams (when compared to renown teams of Europe) th
 
 For future reference I will make note of the teams with higher number of wins by clutch goals. These may very well be the most exciting teams. Those that keep you waiting until the last minute, because anything could happen even when it may seem like it’s over.
 
---> IMAGE <--
+<p align="center">
+  <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-most-exciting.png" alt="Graph of teams that may be most clutch and most exciting"/>
+</p>
 
 As seen in the graphs above Real Betis rescued 10 games by stepping up in the final minutes of these games. Also Levante, a team picked up the pace towards the end of last season and has been doing well this season did much with 11 clutch goals.
 
