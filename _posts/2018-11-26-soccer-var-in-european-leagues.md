@@ -17,9 +17,9 @@ In my process initially I looked at the obvious. Who are the highest scoring pla
 
 Then I dug a little more to find more interesting things like players with most goals that tied a game when their team was losing, break a tie, or score to increase the lead by 2 goals (to seal the win) all within 15 minutes of the end of the match.
 
-![Clutch Players Table](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-players.png)
+![Clutch Players Table](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-players.png){: center-block :}
 
-![Clutch Players Graph](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-top.png)
+![Clutch Players Graph](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-top.png){: center-block :}
 
 Now here is when I really found out that it would take a lot more time than what I had available to concretely find those momentous clutch players. So I dug into the teams to see how if there could be something like a clutch team for the season. Again, I looked at goals that tied, broke ties, or seal a win in the last 15 minutes of each game and found that most of these are not the most popular.
 
@@ -27,7 +27,7 @@ Now here is when I really found out that it would take a lot more time than what
 
 Theas are mostly lower budget teams (when compared to renown teams of Europe) that fight to win with what they have. Teams that challenge the *dream-team* like squads.
 
-![Clutch goals for all teams](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-allteams.png)
+![Clutch goals for all teams](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-allteams.png){: center-block :}
 
 For future reference I will make note of the teams with higher number of wins by clutch goals. These may very well be the most exciting teams. Those that keep you waiting until the last minute, because anything could happen even when it may seem like it’s over.
 
@@ -37,6 +37,6 @@ As seen in the graphs above Real Betis rescued 10 games by stepping up in the fi
 
 Barcelona, Real Madrid, and even Atletico de Madrid are the leaders in Spain’s top league but teams like Real Betis, Levante and Villarreal (not labeled in graph above) keep the season enjoyable and challenging. For example Levante’s team squad is worth 10 times less than what Barcelona or Real Madrid are worth and Real Betis may have the oldest age average of all teams in the league.
 
-![Teams with Clutch Success](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-success.png)
+![Teams with Clutch Success](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-success.png){: center-block :}
 
 Although I did not find what I sought after initially (and do aim to take the time to further research as time allows) the work did reward me with the lesson of not coming to data with preconceived ideas and a deeper appreciation for the game of soccer.
