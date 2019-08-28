@@ -13,7 +13,9 @@ Here’s a peak:
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-data.png" alt="Clutch DataFrame Snapshot"/>
 </p>
 
-> *DataFrame of goals in Spain’s La Liga 2017-2018 season.*
+<blockquote>
+<p align="center"><em>DataFrame of goals in Spain’s La Liga 2017-2018 season.</em></p>
+</blockquote>
 
 After spending hours cleaning the data, coming up with my little clutch score grading formula, digging deeper into scores and game results I found out that my little experiment would take a lot more time to produce some worthwhile conclusions about who are European soccer’s decisive players when the game is on the line.
 
@@ -40,21 +42,30 @@ Now here is when I really found out that it would take a lot more time than what
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-teams.png" alt="Most Clutch Teams"/>
 </p>
-<p align="center"><em>These may be the clutch teams of last season.</em></p>
+
+<blockquote>
+<p align="center"><em>These may be the clutch teams of the 2017-2018 season.</em></p>
+</blockquote>
 
 These are mostly lower budget teams (when compared to renown teams of Europe) that fight to win with what they have. Teams that challenge the *dream-team* like squads.
 
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-all-teams.png" alt="Clutch goals for all teams"/>
 </p>
+
+<blockquote>
 <p align="center"><em>Every team in La Liga — clutch goals and number games turned to their favor.</em></p>
+</blockquote>
 
 For future reference I will make note of the teams with higher number of wins by clutch goals. These may very well be the most exciting teams. Those that keep you waiting until the last minute, because anything could happen even when it may seem like it’s over.
 
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-most-exciting.png" alt="Graph of teams that may be most clutch and most exciting"/>
 </p>
+
+<blockquote>
 <p align="center"><em>The correlation between clutch goals and games won by such scores is not so strong, but definitely the 3 teams on top did stand out from the rest in this category.</em></p>
+</blockquote>
 
 As seen in the graphs above Real Betis rescued 10 games by stepping up in the final minutes of these games. Also Levante, a team picked up the pace towards the end of last season and has been doing well this season did much with 11 clutch goals.
 
@@ -63,6 +74,9 @@ Barcelona, Real Madrid, and even Atletico de Madrid are the leaders in Spain’s
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-success.png" alt="Teams with Clutch Success"/>
 </p>
+
+<blockquote>
 <p align="center"><em>These are four of the most thrilling teams to watch in Spain’s La Liga.</em></p>
+</blockquote>
 
 Although I did not find what I sought after initially (and do aim to take the time to further research as time allows) the work did reward me with the lesson of not coming to data with preconceived ideas and a deeper appreciation for the game of soccer.
