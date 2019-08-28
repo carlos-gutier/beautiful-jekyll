@@ -36,7 +36,7 @@ Now here is when I really found out that it would take a lot more time than what
 Theas are mostly lower budget teams (when compared to renown teams of Europe) that fight to win with what they have. Teams that challenge the *dream-team* like squads.
 
 <p align="center">
-  <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-allteams.png" alt="Clutch goals for all teams"/>
+  <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-all-teams.png" alt="Clutch goals for all teams"/>
 </p>
 
 For future reference I will make note of the teams with higher number of wins by clutch goals. These may very well be the most exciting teams. Those that keep you waiting until the last minute, because anything could happen even when it may seem like it’s over.
