@@ -33,7 +33,6 @@ Now here is when I really found out that it would take a lot more time than what
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-teams.png" alt="Most Clutch Teams"/>
 </p>
 
-
 Theas are mostly lower budget teams (when compared to renown teams of Europe) that fight to win with what they have. Teams that challenge the *dream-team* like squads.
 
 <p align="center">
