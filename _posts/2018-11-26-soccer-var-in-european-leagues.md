@@ -12,7 +12,7 @@ Here’s a peak:
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-data.png" alt="Clutch DataFrame Snapshot"/>
 </p>
-<p align="center"><em>DataFrame of goals in Spain’s La Liga 2018/17 season</em></p>
+> *DataFrame of goals in Spain’s La Liga 2017-2018 season.*
 
 After spending hours cleaning the data, coming up with my little clutch score grading formula, digging deeper into scores and game results I found out that my little experiment would take a lot more time to produce some worthwhile conclusions about who are European soccer’s decisive players when the game is on the line.
 
