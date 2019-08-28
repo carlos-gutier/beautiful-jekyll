@@ -12,6 +12,7 @@ Here’s a peak:
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-data.png" alt="Clutch DataFrame Snapshot"/>
 </p>
+
 > *DataFrame of goals in Spain’s La Liga 2017-2018 season.*
 
 After spending hours cleaning the data, coming up with my little clutch score grading formula, digging deeper into scores and game results I found out that my little experiment would take a lot more time to produce some worthwhile conclusions about who are European soccer’s decisive players when the game is on the line.
@@ -43,7 +44,7 @@ These are mostly lower budget teams (when compared to renown teams of Europe) th
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-all-teams.png" alt="Clutch goals for all teams"/>
 </p>
-<p align="center"><em>Every team in La Liga — clutch goals & games to their favor by such goals.</em></p>
+<p align="center"><em>Every team in La Liga — clutch goals and number games turned to their favor.</em></p>
 
 For future reference I will make note of the teams with higher number of wins by clutch goals. These may very well be the most exciting teams. Those that keep you waiting until the last minute, because anything could happen even when it may seem like it’s over.
 
