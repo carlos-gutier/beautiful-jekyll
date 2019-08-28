@@ -17,7 +17,9 @@ In my process initially I looked at the obvious. Who are the highest scoring pla
 
 Then I dug a little more to find more interesting things like players with most goals that tied a game when their team was losing, break a tie, or score to increase the lead by 2 goals (to seal the win) all within 15 minutes of the end of the match.
 
-<img align="center" src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-players.png" alt="Clutch Players Table]"/>
+<p align="center">
+  <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-players.png" alt="Clutch Players Table"/>
+</p>
 
 ![Clutch Players Graph](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-top.png)
 
