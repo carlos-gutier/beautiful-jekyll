@@ -9,7 +9,7 @@ I began parsing through JSON formatted text from an API and came up with a table
 
 Here’s a peak:
 
---> IMAGE <---
+![Clutch DataFrame Snapshot](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-data.png)
 
 After spending hours cleaning the data, coming up with my little clutch score grading formula, digging deeper into scores and game results I found out that my little experiment would take a lot more time to produce some worthwhile conclusions about who are European soccer’s decisive players when the game is on the line.
 
@@ -17,15 +17,17 @@ In my process initially I looked at the obvious. Who are the highest scoring pla
 
 Then I dug a little more to find more interesting things like players with most goals that tied a game when their team was losing, break a tie, or score to increase the lead by 2 goals (to seal the win) all within 15 minutes of the end of the match.
 
---> IMAGE <--
+![Clutch Players Table](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-players.png)
+
+![Clutch Players Graph](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-top.png)
 
 Now here is when I really found out that it would take a lot more time than what I had available to concretely find those momentous clutch players. So I dug into the teams to see how if there could be something like a clutch team for the season. Again, I looked at goals that tied, broke ties, or seal a win in the last 15 minutes of each game and found that most of these are not the most popular.
 
---> IMAGE <--
+![]()
 
-Theas are mostly lower budget teams (when compared to renown teams of Europe) that fight to win with what they have. Teams that challenge the "dream-team" like squads.
+Theas are mostly lower budget teams (when compared to renown teams of Europe) that fight to win with what they have. Teams that challenge the *dream-team* like squads.
 
---> IMAGE <--
+![Clutch goals for all teams](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-allteams.png)
 
 For future reference I will make note of the teams with higher number of wins by clutch goals. These may very well be the most exciting teams. Those that keep you waiting until the last minute, because anything could happen even when it may seem like it’s over.
 
