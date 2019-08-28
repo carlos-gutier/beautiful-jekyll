@@ -7,4 +7,4 @@ This [dataset](https://archive.ics.uci.edu/ml/datasets/Blood+Transfusion+Service
 
 Our goal is to predict the last column, whether the donor made a donation in March 2007, using information about each donor's history. We'll measure success using recall score as the model evaluation metric.
 
-**Good data-driven systems for tracking and predicting donations and supply needs can improve the entire supply chain**, making sure that more patients get the blood transfusions they need.
+*Good data-driven systems for tracking and predicting donations and supply needs can improve the entire supply chain*, making sure that more patients get the blood transfusions they need.
