@@ -35,6 +35,6 @@ As seen in the graphs above Real Betis rescued 10 games by stepping up in the fi
 
 Barcelona, Real Madrid, and even Atletico de Madrid are the leaders in Spain’s top league but teams like Real Betis, Levante and Villarreal (not labeled in graph above) keep the season enjoyable and challenging. For example Levante’s team squad is worth 10 times less than what Barcelona or Real Madrid are worth and Real Betis may have the oldest age average of all teams in the league.
 
---> IMAGE <--
+[Teams with Clutch Success](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-success.png)
 
 Although I did not find what I sought after initially (and do aim to take the time to further research as time allows) the work did reward me with the lesson of not coming to data with preconceived ideas and a deeper appreciation for the game of soccer.
