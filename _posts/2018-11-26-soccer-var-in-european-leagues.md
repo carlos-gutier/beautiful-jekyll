@@ -52,6 +52,6 @@ Barcelona, Real Madrid, and even Atletico de Madrid are the leaders in Spain’s
 <p align="center">
   <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-success.png" alt="Teams with Clutch Success"/>
 </p>
-<p align="center"<em>>4 of the most thrilling teams to watch in Spain’s La Liga</em></p>
+<p align="center"><em>4 of the most thrilling teams to watch in Spain’s La Liga</em></p>
 
 Although I did not find what I sought after initially (and do aim to take the time to further research as time allows) the work did reward me with the lesson of not coming to data with preconceived ideas and a deeper appreciation for the game of soccer.
