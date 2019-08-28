@@ -1,6 +1,6 @@
 ---
-title: Visualizing Clutch Scoring in Spain's Soccer League
-subtitle: Scores right before games wrap up in the 2017-2018 season.
+title: Data for Finding Most Exciting Teams in Spain's Soccer League
+subtitle: Looking into last minutes scores in the 2017-2018 season
 image: /img/tom-grimbert-718473-unsplash.jpg
 ---
 High level professional soccer tends to be a low scoring game, many matches are left without any of the teams having scored. Lately this has left me curious to find if soccer does have “clutch” players or even “clutch” teams.
