@@ -3,7 +3,7 @@ title: Visualizing Clutch Scoring in Spain's Soccer League
 subtitle: Scores right before games wrap up in the 2017-2018 season.
 image: /img/tom-grimbert-718473-unsplash.jpg
 ---
-Hig level professional soccer tends to be a low scoring game, many matches are left without any of the teams having scored. Lately this has left me curious to find if soccer does have “clutch” players or even “clutch” teams.
+High level professional soccer tends to be a low scoring game, many matches are left without any of the teams having scored. Lately this has left me curious to find if soccer does have “clutch” players or even “clutch” teams.
 
 I began parsing through JSON formatted text from an API and came up with a table for all goals scored last season along with a rudimentary calculation for what I thought could be a score to grade each goal’s “clutch” level.
 
