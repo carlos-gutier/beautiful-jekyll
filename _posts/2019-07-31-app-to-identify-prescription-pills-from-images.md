@@ -14,7 +14,7 @@ A group of developers sought to build an app with a functionality that would let
 
 Two of us were given 16 days to give this a try. After looking around we found [Pillbox's API from the National Library of Medicine](https://github.com/carlos-gutier/carlos-gutier.github.io/tree/master/_posts) which for greater flexibility we turned into our own SQL database stored on [AWS RDS](https://aws.amazon.com/rds/) using PostgreSQL. The database contains information about prescription pills such as the producer, active and inactive ingredients, shape, color, and *pill imprint* which we would use later to identify the pills for our machine learning model.
 
-You would think that building a Machine Learning model to identify prescription pills would be the hardest task of this project, but actually putting getting the database and creating an API for the developers to work with was the biggest challenge for us.
+You would think that building a Machine Learning model to identify prescription pills would be the hardest task of this project, but actually putting getting the database and creating an API for the developers to work with was the biggest challengewidth="100" for us.
 
 After putting togeter our SQL database we had to write code to query it. Here's part of the code used to obtain the description we needed for each pill identified. Users would have the the option of just taking the picture or providing the imprint, name, shape and color of the pill as a second option (which would return more exact results):
 ```python
@@ -222,4 +222,4 @@ text_set = list(set(text_found))
 Along with the application of a few image filters Rekognition did not have much trouble in identifying text in pills with etched imprints. The ease of use along with accuracy made it easy for us to take as our final choice for the job.
 
 ## Conclusion
-If time allowed we would have taken more time to make the OpenCV and Tesseract model work with etched pills. Also would have build a shape detection model that along with the pill imprint code would provide us with the pill shape to increase accuracy when querying the database.
+Overall we were satisfied with the how much we were able to accomplished in 16 days. Moreover, if we had been given more time we could found ways to make the OpenCV and Tesseract model work with etched pills. Also, we could have build a shape detection model that would have allowed us to query our database not just with the identified imprint but also the shape of the pill for more exact results.
