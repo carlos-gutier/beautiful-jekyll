@@ -193,7 +193,8 @@ for ((startX, startY, endX, endY), text) in results:
 
 
 The model's accuracy in detecting and reading text was very good, except when it came to images of pills with etched (see sample image below), which account to a good number of prescription pills in the market.
- <img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/sample_pill_FAIL.jpg" alt="Pill image with etched imprint" width="60"> 
+
+<img src="https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/sample_pill_FAIL.jpg" alt="Pill image with etched imprint" width="100"> 
 
 Even after applying several image filters we were not able to get OpenCV to detect the text. We could have spent more time applying other filters and tweaking OpenCV parameters but we were running out of time so we decided to opted to implement our other option.
 
