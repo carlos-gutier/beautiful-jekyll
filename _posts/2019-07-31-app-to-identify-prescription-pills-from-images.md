@@ -177,4 +177,20 @@ plt.imshow(detected_img);
 ```
 ![Pill image with bounding boxes around text](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/rxid-bounding-box.png)
 
+And to obtain the text within the bounding:
+```python
+config = ("-l eng --oem 1 --psm 7")
+text = pytesseract.image_to_string(roi, config=config)
+```
+```python
 
+# loop over the results
+for ((startX, startY, endX, endY), text) in results:
+	# display the text OCR'd by Tesseract
+	print("OCR TEXT")
+	print("========")
+	print("{}\n".format(text))
+```
+![OCR text results](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/rxid-ocr-text.png)
+
+The model's accuracy was modest was good with certain images
