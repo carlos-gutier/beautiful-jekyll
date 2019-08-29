@@ -93,7 +93,7 @@ def rekog():
 ## Identifying Pills from Images
 We knew there were two ways to approach this problem. One was to build our own solution by using image processing and optical character recognition (OCR) libraries. The other option was to use a text recognition service through [AWS Rekognition](https://aws.amazon.com/rekognition/), [Google Vision](https://cloud.google.com/vision/) or [Azure Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/).
 
-### *Using OpenCV and Tesseract*
+#### *Using OpenCV and Tesseract*
 Initially we worked with a model using OpenCV for text detection and Tesseract for text recognition. Here's how we would detect the text area in the image and create bounding boxes around the it:
 
 ```python
@@ -200,5 +200,26 @@ The model's accuracy in detecting and reading text was very good, except when it
 
 Even after applying several image filters we were not able to get OpenCV to detect the text. We could have spent more time applying other filters and tweaking OpenCV parameters but we were running out of time so we decided to opted to implement our other option.
 
-### *Implementing AWS Rekognition*
+#### *Implementing AWS Rekognition*
 
+Working with AWS Rekognition was fairly simple and it provided mostly accurate results. Below is code showing our implementation:
+```python
+# ------------- Detecting text from original image ------------
+            with open(imageFile, 'rb') as image:
+                # !!!!!!  WRAP THIS IN A TRY / CATCH !!!!!!!!!
+                print('detect started', imageFile)
+                response = client.detect_text(Image={'Bytes': image.read()})
+                print('detect completed', imageFile)
+
+            # ------------- Detected Text (List of Dictionaries) -------------
+            textDetections = response['TextDetections']
+
+            # ------------- Parsing Through Detected Text and 
+            # Making list of Unique Sets of Text Dectected -------------
+            text_found = []
+            for text in textDetections:
+                if text['Confidence'] > con_fidence:
+                    text_found.append(text['DetectedText'])
+            text_set = list(set(text_found))
+```
+Along with the application of a few image filters Rekognition did not have much trouble in identifying text in pills with etched imprints. The ease of use along with accuracy made it easy for us to take as our final choice for the job.
