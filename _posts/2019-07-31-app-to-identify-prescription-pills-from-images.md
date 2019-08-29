@@ -91,7 +91,90 @@ def rekog():
 ```
 
 ## Identifying Pills from Images
-We knew there were two ways to approach this problem. One was to build our own solution by using optical character recognition (OCR) libraries. The other option was to use a text recognition service through [AWS Rekognition](https://aws.amazon.com/rekognition/), [Google Vision](https://cloud.google.com/vision/) or [Azure Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/).
+We knew there were two ways to approach this problem. One was to build our own solution by using image processing and optical character recognition (OCR) libraries. The other option was to use a text recognition service through [AWS Rekognition](https://aws.amazon.com/rekognition/), [Google Vision](https://cloud.google.com/vision/) or [Azure Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/).
 
-#### *Using OpenCV and Tesseract*
-We first tried to create our own model.
+### *Using OpenCV and Tesseract*
+Initially we worked with a model using OpenCV for text detection and Tesseract for text recognition. Here's how we would detect the text area in the image and create bounding boxes around the it:
+
+```python
+# grab the number of rows and columns from the scores volume, then
+# initialize our set of bounding box rectangles and corresponding
+# confidence scores
+(numRows, numCols) = scores.shape[2:4]
+rects = []
+confidences = []
+
+# loop over the number of rows
+for y in range(0, numRows):
+	# extract the scores (probabilities), followed by the geometrical
+	# data used to derive potential bounding box coordinates that
+	# surround text
+	scoresData = scores[0, 0, y]
+	xData0 = geometry[0, 0, y]
+	xData1 = geometry[0, 1, y]
+	xData2 = geometry[0, 2, y]
+	xData3 = geometry[0, 3, y]
+	anglesData = geometry[0, 4, y]
+
+	# loop over the number of columns
+	for x in range(0, numCols):
+		# if our score does not have sufficient probability, ignore it
+		if scoresData[x] < 0.5:
+			continue
+
+		# compute the offset factor as our resulting feature maps will
+		# be 4x smaller than the input image
+		(offsetX, offsetY) = (x * 4.0, y * 4.0)
+
+		# extract the rotation angle for the prediction and then
+		# compute the sin and cosine
+		angle = anglesData[x]
+		cos = np.cos(angle)
+		sin = np.sin(angle)
+
+		# use the geometry volume to derive the width and height of
+		# the bounding box
+		h = xData0[x] + xData2[x]
+		w = xData1[x] + xData3[x]
+
+		# compute both the starting and ending (x, y)-coordinates for
+		# the text prediction bounding box
+		endX = int(offsetX + (cos * xData1[x]) + (sin * xData2[x]))
+		endY = int(offsetY - (sin * xData1[x]) + (cos * xData2[x]))
+		startX = int(endX - w)
+		startY = int(endY - h)
+
+		# add the bounding box coordinates and probability score to
+		# our respective lists
+		rects.append((startX, startY, endX, endY))
+		confidences.append(scoresData[x])
+
+# apply non-maxima suppression to suppress weak, overlapping bounding
+# boxes
+boxes = non_max_suppression(np.array(rects), probs=confidences)
+
+# loop over the bounding boxes
+for (startX, startY, endX, endY) in boxes:
+	# scale the bounding box coordinates based on the respective
+	# ratios
+	startX = int(startX * rW)
+	startY = int(startY * rH)
+	endX = int(endX * rW)
+	endY = int(endY * rH)
+
+	# draw the bounding box on the image
+	cv2.rectangle(orig, (startX, startY), (endX, endY), (0, 255, 0), 2)
+
+# save the output image with bounding boxes
+cv2.imwrite('/home/ec2-user/SageMaker/detected_images/DETECT_cap.10.jpg', orig)
+```
+
+This is the image of the pill with bounding boxes around the detected text:
+
+```python
+detected_img = imageio.imread('/home/ec2-user/SageMaker/detected_images/DETECT_cap.10.jpg')
+plt.imshow(detected_img);
+```
+![Pill image with bounding boxes around text](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/rxid-bounding-box.png)
+
+
