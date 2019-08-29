@@ -106,48 +106,47 @@ confidences = []
 
 # loop over the number of rows
 for y in range(0, numRows):
-	# extract the scores (probabilities), followed by the geometrical
-	# data used to derive potential bounding box coordinates that
-	# surround text
-	scoresData = scores[0, 0, y]
-	xData0 = geometry[0, 0, y]
-	xData1 = geometry[0, 1, y]
-	xData2 = geometry[0, 2, y]
-	xData3 = geometry[0, 3, y]
-	anglesData = geometry[0, 4, y]
+    # extract the scores (probabilities), followed by the geometrical
+    # data used to derive potential bounding box coordinates that souround text
+    scoresData = scores[0, 0, y]
+    xData0 = geometry[0, 0, y]
+    xData1 = geometry[0, 1, y]
+    xData2 = geometry[0, 2, y]
+    xData3 = geometry[0, 3, y]
+    anglesData = geometry[0, 4, y]
 
-	# loop over the number of columns
-	for x in range(0, numCols):
-		# if our score does not have sufficient probability, ignore it
-		if scoresData[x] < 0.5:
-			continue
+    # loop over the number of columns
+    for x in range(0, numCols):
+	# if our score does not have sufficient probability, ignore it
+	if scoresData[x] < 0.5:
+	    continue
 
-		# compute the offset factor as our resulting feature maps will
-		# be 4x smaller than the input image
-		(offsetX, offsetY) = (x * 4.0, y * 4.0)
+	# compute the offset factor as our resulting feature maps will
+	# be 4x smaller than the input image
+	(offsetX, offsetY) = (x * 4.0, y * 4.0)
 
-		# extract the rotation angle for the prediction and then
-		# compute the sin and cosine
-		angle = anglesData[x]
-		cos = np.cos(angle)
-		sin = np.sin(angle)
+	# extract the rotation angle for the prediction and then
+	# compute the sin and cosine
+	angle = anglesData[x]
+	cos = np.cos(angle)
+	sin = np.sin(angle)
 
-		# use the geometry volume to derive the width and height of
-		# the bounding box
-		h = xData0[x] + xData2[x]
-		w = xData1[x] + xData3[x]
+	# use the geometry volume to derive the width and height of
+	# the bounding box
+	h = xData0[x] + xData2[x]
+	w = xData1[x] + xData3[x]
 
-		# compute both the starting and ending (x, y)-coordinates for
-		# the text prediction bounding box
-		endX = int(offsetX + (cos * xData1[x]) + (sin * xData2[x]))
-		endY = int(offsetY - (sin * xData1[x]) + (cos * xData2[x]))
-		startX = int(endX - w)
-		startY = int(endY - h)
+	# compute both the starting and ending (x, y)-coordinates for
+	# the text prediction bounding box
+	endX = int(offsetX + (cos * xData1[x]) + (sin * xData2[x]))
+	endY = int(offsetY - (sin * xData1[x]) + (cos * xData2[x]))
+	startX = int(endX - w)
+	startY = int(endY - h)
 
-		# add the bounding box coordinates and probability score to
-		# our respective lists
-		rects.append((startX, startY, endX, endY))
-		confidences.append(scoresData[x])
+	# add the bounding box coordinates and probability score to
+	# our respective lists
+	rects.append((startX, startY, endX, endY))
+	confidences.append(scoresData[x])
 
 # apply non-maxima suppression to suppress weak, overlapping bounding
 # boxes
@@ -155,15 +154,14 @@ boxes = non_max_suppression(np.array(rects), probs=confidences)
 
 # loop over the bounding boxes
 for (startX, startY, endX, endY) in boxes:
-	# scale the bounding box coordinates based on the respective
-	# ratios
-	startX = int(startX * rW)
-	startY = int(startY * rH)
-	endX = int(endX * rW)
-	endY = int(endY * rH)
+    # scale the bounding box coordinates based on the respective ratios
+    startX = int(startX * rW)
+    startY = int(startY * rH)
+    endX = int(endX * rW)
+    endY = int(endY * rH)
 
-	# draw the bounding box on the image
-	cv2.rectangle(orig, (startX, startY), (endX, endY), (0, 255, 0), 2)
+# draw the bounding box on the image
+cv2.rectangle(orig, (startX, startY), (endX, endY), (0, 255, 0), 2)
 
 # save the output image with bounding boxes
 cv2.imwrite('/home/ec2-user/SageMaker/detected_images/DETECT_cap.10.jpg', orig)
@@ -186,10 +184,10 @@ text = pytesseract.image_to_string(roi, config=config)
 
 # loop over the results
 for ((startX, startY, endX, endY), text) in results:
-	# display the text OCR'd by Tesseract
-	print("OCR TEXT")
-	print("========")
-	print("{}\n".format(text))
+    # display the text OCR'd by Tesseract
+    print("OCR TEXT")
+    print("========")
+    print("{}\n".format(text))
 ```
 ![OCR text results](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/rxid-ocrtext.png)
 
@@ -222,3 +220,6 @@ for text in textDetections:
 text_set = list(set(text_found))
 ```
 Along with the application of a few image filters Rekognition did not have much trouble in identifying text in pills with etched imprints. The ease of use along with accuracy made it easy for us to take as our final choice for the job.
+
+## Conclusion
+If time allowed we would have taken more time to make the OpenCV and Tesseract model work with etched pills. Also would have build a shape detection model that along with the pill imprint code would provide us with the pill shape to increase accuracy when querying the database.
