@@ -6,9 +6,9 @@ image: https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-
 
 A group of developers sought to build an app with a functionality that would let users scan their prescription pills by taking a picture with their device. After scannig the pill we would need to return a match for the scanned medication from a database we did not have in hand.
 
----> Record DEMO Video of my own RxID and Place HERE <---
+*Note: The app was not fully deployed. In case you're curious [here's where it was left off](https://www.rxid.net/).*
 
-![RxId Landing Page](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/rxid-landing-page.png)
+--> ADD DEMO VIDEO OF MY OF DS FUNCTIONALLITY HERE <--
 
 ## Database & API
 
