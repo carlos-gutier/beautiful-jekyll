@@ -93,5 +93,5 @@ def rekog():
 ## Identifying Pills from Images
 We knew there were two ways to approach this problem. One was to build our own solution by using optical character recognition (OCR) libraries. The other option was to use a text recognition service through [AWS Rekognition](https://aws.amazon.com/rekognition/), [Google Vision](https://cloud.google.com/vision/) or [Azure Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/).
 
-### Using OpenCV and Tesseract
+#### *Using OpenCV and Tesseract*
 We first tried to create our own model.
