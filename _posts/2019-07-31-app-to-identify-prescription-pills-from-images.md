@@ -205,21 +205,20 @@ Even after applying several image filters we were not able to get OpenCV to dete
 Working with AWS Rekognition was fairly simple and it provided mostly accurate results. Below is code showing our implementation:
 ```python
 # ------------- Detecting text from original image ------------
-            with open(imageFile, 'rb') as image:
-                # !!!!!!  WRAP THIS IN A TRY / CATCH !!!!!!!!!
-                print('detect started', imageFile)
-                response = client.detect_text(Image={'Bytes': image.read()})
-                print('detect completed', imageFile)
+with open(imageFile, 'rb') as image:
+    print('detect started', imageFile)
+    response = client.detect_text(Image={'Bytes': image.read()})
+    print('detect completed', imageFile)
 
-            # ------------- Detected Text (List of Dictionaries) -------------
-            textDetections = response['TextDetections']
+# ------------- Detected Text (List of Dictionaries) -------------
+textDetections = response['TextDetections']
 
-            # ------------- Parsing Through Detected Text and 
-            # Making list of Unique Sets of Text Dectected -------------
-            text_found = []
-            for text in textDetections:
-                if text['Confidence'] > con_fidence:
-                    text_found.append(text['DetectedText'])
-            text_set = list(set(text_found))
+# ------------- Parsing Through Detected Text and 
+# Making list of Unique Sets of Text Dectected -------------
+text_found = []
+for text in textDetections:
+    if text['Confidence'] > con_fidence:
+        text_found.append(text['DetectedText'])
+text_set = list(set(text_found))
 ```
 Along with the application of a few image filters Rekognition did not have much trouble in identifying text in pills with etched imprints. The ease of use along with accuracy made it easy for us to take as our final choice for the job.
