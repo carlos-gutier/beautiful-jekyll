@@ -1,5 +1,5 @@
 ---
-title: Predictions that can Improve on Supply Chain
+title: Predictions that Can Improve on Supply Chain
 subtitle: Predicting blood donations with logistic regression
 image: https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-preview.png
 ---
