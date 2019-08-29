@@ -46,7 +46,7 @@ def query_sql_data(parameter_list):
                 WHERE """
 ```
 
-After quering our database we would post our results in a Flask application on [AWS EC2](https://aws.amazon.com/ec2/) as an endpoint that developers could use for their work:
+After quering our database we would post our results in a Flask application on [AWS EC2](https://aws.amazon.com/ec2/) as an endpoint of our work for the developers:
 
 ```python
 # _____ imports _____________
@@ -89,3 +89,9 @@ def rekog():
     else:
         return jsonify("YOU just made a GET request to /rekog")
 ```
+
+## Identifying Pills from Images
+We knew there were two ways to approach this problem. One was to build our own solution by using optical character recognition (OCR) libraries. The other option was to use a text recognition service through [AWS Rekognition](https://aws.amazon.com/rekognition/), [Google Vision](https://cloud.google.com/vision/) or [Azure Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/).
+
+### Using OpenCV and Tesseract
+We first tried to create our own model.
