@@ -191,6 +191,12 @@ for ((startX, startY, endX, endY), text) in results:
 	print("========")
 	print("{}\n".format(text))
 ```
-![OCR text results](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/rxid-ocr-text.png)
+![OCR text results](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/rxid-ocrtext.png)
 
-The model's accuracy was modest was good with certain images
+
+The model's accuracy in detecting and reading text was very good, except when it came to images of pills with etched (see sample image below), which account to a good number of prescription pills in the market.
+[Pill image with etched imprint](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/sample_pill_FAIL.jpg)
+Even after applying several image filters we were not able to get OpenCV to detect the text. We could have spent more time applying other filters and tweaking OpenCV parameters but we were running out of time so we decided to opted to implement our other option.
+
+### *Implementing AWS Rekognition*
+
