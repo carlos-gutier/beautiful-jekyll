@@ -140,6 +140,6 @@ Now even these graphs are more distiguishable in what they reveal:
 I would recommend paying particular attention to customers that don't have a partner, those with children, and maybe senior citizens.
 
 #### What actions would you recommend to this business to try to improve their customer retention?
-* Targeting married couples with children (not senior) may be worth trying as a marketing/advertising strategy. *It may be that their brand strategy and marketing efforts should all be align to target families (couples with children).*
+* Targeting married couples with children (not senior) may be worth trying as a marketing/advertising strategy. *It may be that their brand strategy and marketing efforts should all be aligned to target families (couples with children).*
 * Carrying out tests among groups that prefer paperless billing by sending various types of correspondance to each.
 
