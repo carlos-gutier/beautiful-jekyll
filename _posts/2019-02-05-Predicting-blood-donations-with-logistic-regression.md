@@ -211,18 +211,18 @@ gs2 = GridSearchCV(pipe2, param_grid=param_grid2, cv=5,
 gs2.fit(X_train1, y_train1);
 gs3.best_score_ 
 ```
-[Training score for second model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-bestscore2.png)
+![Training score for second model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-bestscore2.png)
 
 This is similar to our previous training score. It's a matter of making sure it does better than our baseline now, at at least below we can see that PCA included two parameters (compared to only one we feature being used by SelectKBest).
 
 ```python
 gs3.best_params_
 ```
-[Best model parameters with PCA](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-best-params2.png)
+![Best model parameters with PCA](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-best-params2.png)
 
 And here's our new test score:
 ```python
 test_score = gs2.score(X_test1, y_test1)
 print('Test Score:', test_score)
 ```
-[Test score for second model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-testscore2.png)
+![Test score for second model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-testscore2.png)
