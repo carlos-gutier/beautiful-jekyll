@@ -65,9 +65,10 @@ Here's a sample of what our dataset looks like now:
 ### *A Snapshot of the Company's Customer Retation*
 This is a sample snapshot of only 80 customers out of more than the 7,000 that are in this dataset.
 
+In the plot below blue lines are current customers. Red lines are customers that have been lost.
+
 ![Sample Customer Retation Plot](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-data-snapshot.png)
 
-> Blue lines are current customers. Red lines are customers that have been lost.
 
 ### *Plotting A Survival Estimate Curve*
 ```python
@@ -131,15 +132,15 @@ Now even these graphs are more distiguishable in what they reveal:
 ![Changed Best Predictors Plots](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-predictor-plots2.png)
 
 ## Answers to Our Questions
-#### What features best model customer churn?
+#### 1. What features best model customer churn?
 * **Partner**: customers with partners seem to remain longer.
 * **PaperlessBilling**: to some extent customer with paperless billing tend to leave sooner.
 * **TotalCharges**: the higher the total charges, the longer the "tenure" (as expected).
 
-#### What would we characterize as the "warning signs" that a customer may discontinue service?
+#### 2. What would we characterize as the "warning signs" that a customer may discontinue service?
 I would recommend paying particular attention to customers that don't have a partner, those with children, and maybe senior citizens.
 
-#### What actions would you recommend to this business to try to improve their customer retention?
+#### 3. What actions would you recommend to this business to try to improve their customer retention?
 * Targeting married couples with children (not senior) may be worth trying as a marketing/advertising strategy. *It may be that their brand strategy and marketing efforts should all be aligned to target families (couples with children).*
 * Carrying out tests among groups that prefer paperless billing by sending various types of correspondance to each.
 
