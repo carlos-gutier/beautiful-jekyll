@@ -63,9 +63,7 @@ Here's a sample of what our dataset looks like now:
 ![Churn Dataset Encoding Features](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-onehot.png)
 
 ### *A Snapshot of the Company's Customer Retation*
-This is a sample snapshot of only 80 customers out of more than the 7,000 that are in this dataset.
-
-In the plot below blue lines are current customers. Red lines are customers that have been lost.
+This is a sample snapshot of only 80 customers out of more than the 7,000 that are in this dataset. Here blue lines are current customers. Red lines are customers that have been lost.
 
 ![Sample Customer Retation Plot](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-data-snapshot.png)
 
