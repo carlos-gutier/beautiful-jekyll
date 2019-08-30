@@ -60,12 +60,13 @@ churn7 = churn4[numerical_columns].join(churn6)
 
 Here's a sample of what our dataset looks like now:
 
------ CHURN DATA ONE HOT -----
+![Churn Dataset Encoding Features](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-data-onehot.png)
 
 ### *A Snapshot of the Company's Customer Retation*
 This is a sample snapshot of only 80 customers out of more than the 7,000 that are in this dataset.
 
------ CHURN DATA SNAPSHOT -----
+![Sample Customer Retation Plot](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-data-snapshot.png)
+
 > Blue lines are current customers. Red lines are customers that have been lost.
 
 ### *Plotting A Survival Estimate Curve*
@@ -78,7 +79,7 @@ kmf.fit(time, event_observed=event);
 kmf.plot();
 plt.title('Probability of still having a customer after x months');
 ```
------ CHURN-SURVIVAL-PLOT1 ------
+![Plot of Survival Estimate](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-survival-plot1.png)
 
 This plot gives us an estimate of how long customers will remain. As expected we see here that the longer someone has been a customer, the higher the likelyhood of leaving.
 
@@ -88,7 +89,7 @@ cph = lifelines.CoxPHFitter(penalizer=0.01)
 cph.fit(churn7, 'tenure', event_col='Churn')
 cph.print_summary()
 ```
------ CHURN-SURVIVAL-REGRESSION1 -----
+![Table of Survival Regression](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-survival-regression1.png)
 
 Note that after fitting the model, the following variables have coefficients significantly different from zero: TotalCharges, Partner, and PaperlessBilling. 
 
@@ -98,7 +99,7 @@ This plot shows the features that may be significant:
 fig, ax = plt.subplots(figsize=(10,20));
 cph.plot(ax=ax);
 ```
------ CHURN-LOG-PLOT1 -----
+![Log Hazard Ratio Table](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-log-plot1.png)
 
 ### *Finding Best Predictors of Churn*
 Let's plot predictions for several covariate groups to see if they look any different.
@@ -107,26 +108,27 @@ cph.plot_covariate_groups('Partner', [0,1]);
 cph.plot_covariate_groups('PaperlessBilling', [0,1]);
 cph.plot_covariate_groups('MonthlyCharges', [10,20,30,60,80,100,110,120]);
 ```
+![Plots of Best Predictors](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/chrun-predictor-plots1.png)
 
------ CHURN-PREDICTOR-PLOTS1 -----
 Definitely looks like higher monthly charges cause customers to leave.
 
 Let's look at "TotalCharges" since customers that have been around longer should have accumulated higher amounts.
 
------ CHURN-PREDICTOR-TOTAL1 -----
+![Plot of Total Charges](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-predictor-total1.png)
+
 "TotalCharges" and "tenure" are highly correlated, so we will remove this feature from our model and run these last few plots again.
 
 ### Regression Survival Table After Removing "TotalCharges"
 Now "Partner" and "PaperlessBilling" are the best predictors. Although, I would say that "SeniorCitizen" and "Dependents" are not far either from being significant features.
 
------ CHURN-SURVIVAL-REGRESSION2 -----
+![Changed Regression Survival Table Plot](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-survival-regression2.png)
 
 ### Changes in Best Predictors Plot
 Now even these graphs are more distiguishable in what they reveal:
 * In the previews plot the "Partner" feature, "no" partner was above the baseline but now it's reversed.
 * There's more separation between the lines in the "PaperlessBilling" graph.
 
------ CHURN-PREDICTOR-PLOTS2 -----
+![Changed Best Predictors Plots](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-predictor-plots2.png)
 
 ## Answers to Our Questions
 #### What features best model customer churn?
