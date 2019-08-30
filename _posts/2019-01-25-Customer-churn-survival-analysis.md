@@ -60,7 +60,7 @@ churn7 = churn4[numerical_columns].join(churn6)
 
 Here's a sample of what our dataset looks like now:
 
-![Churn Dataset Encoding Features](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-data-onehot.png)
+![Churn Dataset Encoding Features](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-onehot.png)
 
 ### *A Snapshot of the Company's Customer Retation*
 This is a sample snapshot of only 80 customers out of more than the 7,000 that are in this dataset.
