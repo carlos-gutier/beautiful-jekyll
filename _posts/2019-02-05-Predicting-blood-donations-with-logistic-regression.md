@@ -11,7 +11,7 @@ This [dataset](https://archive.ics.uci.edu/ml/datasets/Blood+Transfusion+Service
 Our goal is to predict the last column, whether the donor made a donation in March 2007, using information about each donor's history. We'll measure success using recall score as the model evaluation metric.
 
 This will be a simple example of what we can do with small size databases that have few columns; for example, small businesses that have data about their suppliers and their delieveries of certain product.
-
+<br>
 ## Looking Into Our Dataset
 ```python
 import pandas as pd
@@ -28,7 +28,7 @@ df = df.rename(columns={
 })
 ```
 ![Donor dataset first five rows](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-head.png)
-
+<br>
 ## Begin with "Majority Class Baseline"
 We want a baseline metric that we can use to compare our future prediction model against. The simplest prediction we can make in this case is select the category that has the most observation. 
 
@@ -75,7 +75,7 @@ plt.show()
 ```
 The only feature that seems to have values as possible outliers is "months_since_last_donation." It may be wise to normalize the values of our features with a scalar that accounts for outliers.
 ![Pairplot of dataset](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-pairplot.png)
-
+<br>
 ## Split Data for Training and Testing
 We will split the data into X_train, X_test, y_train, y_test, with random shuffle. (We will include 75% of the data for training our classification model, and hold out 25% of the data to test the predictions after our model has been trained.)
 
@@ -95,7 +95,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 X_train.shape, y_train.shape, X_test.shape, y_test.shape
 ```
 ![Shape of train and test data sets](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-shape.png)
-
+<br>
 ## Make a Pipeline
 This will our pipeline to conveniently preprocess our data will include: 
 * Normalizing our features with [Scikit-learn's RobustScalar](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.preprocessing)
@@ -159,7 +159,7 @@ In other words, the best parameters for our logistic regression are:
 * SelectKBest: k=1 (the logistic regression performs best when it ignores all the other features and uses only the top one)
 
 And so far according based on our trainning score (0.79), we are doing better than our "majority class baseline" (0.76). Moreover, this will need stand after testing our model with our test set.
-
+<br>
 ## Testing Our Model
 ```python
 test_score = gs.score(X_test, y_test)
@@ -168,7 +168,7 @@ print('Test Score:', test_score)
 ![Model test score](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-testscore1.png)
 
 As we can see, our model did not do better than our baseline. We might do better just guessing instead of going with our model.
-
+<br>
 ## Feature Engineering to Improve On Our Predictions
 Many times the performance of our model does not necessarily depend on the algorithm we chose to work with, but on generating aditional useful features from the ones we already have.
 
