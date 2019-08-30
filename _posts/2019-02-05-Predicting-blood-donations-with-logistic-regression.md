@@ -27,8 +27,7 @@ df = df.rename(columns={
     'whether he/she donated blood in March 2007': 'made_donation_in_march_2007'
 })
 ```
-
-![](donor-head)
+![Donor dataset first five rows](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-head.png)
 
 ## Begin with "Majority Class Baseline"
 We want a baseline metric that we can use to compare our future prediction model against. The simplest prediction we can make in this case is select the category that has the most observation. 
@@ -44,12 +43,12 @@ y_pred = np.full(shape=df.shape[0], fill_value=majority_class)
 
 print(accuracy_score(y_val, y_pred))
 ```
-![](donor-baseline1)
+![Majority baseline for model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-baseline1.png)
 
 ```python
 df.made_donation_in_march_2007.value_counts(normalize=True)
 ```
-![](donor-baseline2)
+![Same majority baseline using value_counts method](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-baseline2.png)
 
 According to model evaluation metrics with this baseline we achieved a *recall* of 1.0 for "0" ("did not donate" class ) and a recall of 0.0 for the "1" class ("did donate" class). Meaning we correctly retrieve all the cases of no donation but we fail to retrieve any cases of donations.
 
@@ -74,7 +73,7 @@ sns.pairplot(data=df, y_vars=['made_donation_in_march_2007'], x_vars=X.columns)
 plt.show()
 ```
 The only feature that seems to have values as possible outliers is "months_since_last_donation." It may be wise to normalize the values of our features with a scalar that accounts for outliers.
-![](donor-pairplot)
+![Pairplot of dataset](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-pairplot.png)
 
 ## Split Data for Training and Testing
 We will split the data into X_train, X_test, y_train, y_test, with random shuffle. (We will include 75% of the data for training our classification model, and hold out 25% of the data to test the predictions after our model has been trained.)
@@ -94,7 +93,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 # Checking shape for each set
 X_train.shape, y_train.shape, X_test.shape, y_test.shape
 ```
-![](donor-shape)
+![Shape of train and test data sets](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-shape.png)
 
 ## Make a Pipeline
 This will our pipeline to conveniently preprocess our data will include: 
@@ -150,7 +149,7 @@ print('Cross-Validation Score:', validation_score)
 print()
 print('Best estimator:', gs.best_estimator_)
 ```
-![](donor-bestscore1)
+![Model training score](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-bestscore1.png)
 
 In other words, the best parameters for our logistic regression are:
 * C (regularization strength): 0.0001
@@ -164,7 +163,7 @@ And so far according based on our trainning score (0.79), we are doing better th
 test_score = gs.score(X_test, y_test)
 print('Test Score:', test_score)
 ```
-![](donor-test-score1)
+![Model test score](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-test-score1.png)
 
 As we can see, our model did not do better than our baseline. We might do better just guessing instead of going with our model.
 
@@ -212,18 +211,18 @@ gs2 = GridSearchCV(pipe2, param_grid=param_grid2, cv=5,
 gs2.fit(X_train1, y_train1);
 gs3.best_score_ 
 ```
-[](donor-bestscore2)
+[Training score for second model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-bestscore2.png)
 
 This is similar to our previous training score. It's a matter of making sure it does better than our baseline now, at at least below we can see that PCA included two parameters (compared to only one we feature being used by SelectKBest).
 
 ```python
 gs3.best_params_
 ```
-[](donor-best-params2)
+[Best model parameters with PCA](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-best-params2.png)
 
 And here's our new test score:
 ```python
 test_score = gs2.score(X_test1, y_test1)
 print('Test Score:', test_score)
 ```
-[](donor-testscore2)
+[Test score for second model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-testscore2.png)
