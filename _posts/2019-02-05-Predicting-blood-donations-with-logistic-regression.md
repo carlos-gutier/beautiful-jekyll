@@ -1,7 +1,7 @@
 ---
 title: Simple Predictions that Can Improve on Supply Chain
 subtitle: Predicting blood donations with logistic regression
-image: https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/clutch-preview.png
+image: https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-post-image.png
 ---
 
 > **Good data-driven systems for tracking and predicting donations and supply needs can improve the entire supply chain, making sure that more patients get the blood transfusions they need.**
