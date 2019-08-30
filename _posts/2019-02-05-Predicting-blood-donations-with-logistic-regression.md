@@ -27,7 +27,7 @@ df = df.rename(columns={
     'whether he/she donated blood in March 2007': 'made_donation_in_march_2007'
 })
 ```
-![Donor dataset first five rows](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-head.png)
+![Donor dataset first five rows](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-head.png)
 
 ## Begin with "Majority Class Baseline"
 We want a baseline metric that we can use to compare our future prediction model against. The simplest prediction we can make in this case is select the category that has the most observation. 
@@ -73,7 +73,7 @@ sns.pairplot(data=df, y_vars=['made_donation_in_march_2007'], x_vars=X.columns)
 plt.show()
 ```
 The only feature that seems to have values as possible outliers is "months_since_last_donation." It may be wise to normalize the values of our features with a scalar that accounts for outliers.
-![Pairplot of dataset](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-pairplot.png)
+![Pairplot of dataset](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-pairplot.png)
 
 ## Split Data for Training and Testing
 We will split the data into X_train, X_test, y_train, y_test, with random shuffle. (We will include 75% of the data for training our classification model, and hold out 25% of the data to test the predictions after our model has been trained.)
@@ -93,7 +93,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 # Checking shape for each set
 X_train.shape, y_train.shape, X_test.shape, y_test.shape
 ```
-![Shape of train and test data sets](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-shape.png)
+![Shape of train and test data sets](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-shape.png)
 
 ## Make a Pipeline
 This will our pipeline to conveniently preprocess our data will include: 
@@ -149,7 +149,7 @@ print('Cross-Validation Score:', validation_score)
 print()
 print('Best estimator:', gs.best_estimator_)
 ```
-![Model training score](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-bestscore1.png)
+![Model training score](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-trainscore1.png)
 
 In other words, the best parameters for our logistic regression are:
 * C (regularization strength): 0.0001
@@ -163,7 +163,7 @@ And so far according based on our trainning score (0.79), we are doing better th
 test_score = gs.score(X_test, y_test)
 print('Test Score:', test_score)
 ```
-![Model test score](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-test-score1.png)
+![Model test score](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-testscore1.png)
 
 As we can see, our model did not do better than our baseline. We might do better just guessing instead of going with our model.
 
@@ -218,11 +218,11 @@ This is similar to our previous training score. It's a matter of making sure it 
 ```python
 gs3.best_params_
 ```
-![Best model parameters with PCA](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-best-params2.png)
+![Best model parameters with PCA](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-params2.png)
 
 And here's our new test score:
 ```python
 test_score = gs2.score(X_test1, y_test1)
 print('Test Score:', test_score)
 ```
-![Test score for second model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-testscore2.png)
+![Test score for second model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-testscore2.png)
