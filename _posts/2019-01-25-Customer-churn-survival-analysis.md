@@ -14,6 +14,7 @@ In the general sense, it can be thought of as *a way to model anything with a fi
 * **birth**: the event that marks the beginning of the time period for observation
 * **death**: the event of interest, which then marks the end of the observation period for an individual
 
+<br>
 
 ## Customer Churn in a Telecomunications Company
 Treselle Systems, a data consulting service, [analyzed customer churn data using logistic regression](http://www.treselle.com/blog/customer-churn-logistic-regression-with-r/). For simply modeling whether or not a customer left this can work, but if we want to model the actual tenure of a customer, survival analysis is more appropriate.
