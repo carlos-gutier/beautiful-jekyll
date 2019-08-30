@@ -14,10 +14,11 @@ In the general sense, it can be thought of as *a way to model anything with a fi
 * **birth**: the event that marks the beginning of the time period for observation
 * **death**: the event of interest, which then marks the end of the observation period for an individual
 
-<br>
-
 ## Customer Churn in a Telecomunications Company
 Treselle Systems, a data consulting service, [analyzed customer churn data using logistic regression](http://www.treselle.com/blog/customer-churn-logistic-regression-with-r/). For simply modeling whether or not a customer left this can work, but if we want to model the actual tenure of a customer, survival analysis is more appropriate.
+
+Here's are a look of the first five rows of the dataset:
+![Telecom dataset first five rows](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/customer-churn-head.png)
 
 The *"tenure"* feature represents the duration that a given customer has been with the company, and *"churn"* represents whether or not that customer left (i.e. the *event*, from a survival analysis perspective). So, any situation where churn is *"no"* means that a customer is still active, and so from a survival analysis perspective the observation is censored (we have their tenure up to now, but we don't know their true duration until event).
 
