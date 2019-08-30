@@ -63,7 +63,7 @@ Here's a sample of what our dataset looks like now:
 ![Churn Dataset Encoding Features](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-onehot.png)
 
 ### *A Snapshot of the Company's Customer Retation*
-This is a sample snapshot of only 80 customers out of more than the 7,000 that are in this dataset. Here blue lines are current customers. Red lines are customers that have been lost.
+This is a sample snapshot of only 80 customers out of more than the 7,000 that are in this dataset. Here blue lines are current customers and red lines are customers that have been lost.
 
 ![Sample Customer Retation Plot](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/churn-data-snapshot.png)
 
@@ -141,4 +141,5 @@ I would recommend paying particular attention to customers that don't have a par
 #### 3. What actions would you recommend to this business to try to improve their customer retention?
 * Targeting married couples with children (not senior) may be worth trying as a marketing/advertising strategy. *It may be that their brand strategy and marketing efforts should all be aligned to target families (couples with children).*
 * Carrying out tests among groups that prefer paperless billing by sending various types of correspondance to each.
+
 <br>
