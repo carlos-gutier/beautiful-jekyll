@@ -43,12 +43,12 @@ y_pred = np.full(shape=df.shape[0], fill_value=majority_class)
 
 print(accuracy_score(y_val, y_pred))
 ```
-![Majority baseline for model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-baseline1.png)
+![Majority baseline for model](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-baseline1.png)
 
 ```python
 df.made_donation_in_march_2007.value_counts(normalize=True)
 ```
-![Same majority baseline using value_counts method](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-baseline2.png)
+![Same majority baseline using value_counts method](https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/donor-data-baseline2.png)
 
 According to model evaluation metrics with this baseline we achieved a *recall* of 1.0 for "0" ("did not donate" class ) and a recall of 0.0 for the "1" class ("did donate" class). Meaning we correctly retrieve all the cases of no donation but we fail to retrieve any cases of donations.
 
