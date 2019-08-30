@@ -63,7 +63,7 @@ y_pred = np.full(df.made_donation_in_march_2007.shape,
 
 print(classification_report(df.made_donation_in_march_2007, y_pred))
 ```
-
+<br>
 ## Check for Outliers or Collinearity with Pairplot
 ```python
 import seaborn as sns
@@ -116,7 +116,7 @@ pipe = make_pipeline(
     SelectKBest(f_regression),
     LogisticRegression(solver='lbfgs'))
 ```
-
+<br>
 ## Doing a Grid Search Cross-Validation
 We will do GridSearchCV with our pipeline. Using 5 folds and recall score.
 
@@ -141,7 +141,7 @@ gs = GridSearchCV(pipe, param_grid=param_grid, cv=5,
 
 gs.fit(X_train, y_train)
 ```
-
+<br>
 ## Display best score and parameters
 ```python
 validation_score = gs.best_score_ # <-- BEST SCORE!
