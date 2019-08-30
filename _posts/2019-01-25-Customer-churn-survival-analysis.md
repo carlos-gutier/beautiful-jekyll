@@ -1,5 +1,5 @@
 ---
-title: Seeking to Interpret Customer Churn with Survival Analysis
+title: Interpreting Customer Churn with Survival Analysis
 subtitle: Finding reasons why customers may leave and ways to decrease churn
 image: https://firstpythonbucketac60bb97-95e1-43e5-98e6-0ca294ec9aad.s3.us-east-2.amazonaws.com/survival-analysis-plot.png
 ---
