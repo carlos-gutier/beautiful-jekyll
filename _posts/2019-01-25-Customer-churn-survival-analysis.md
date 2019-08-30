@@ -136,7 +136,9 @@ Now even these graphs are more distiguishable in what they reveal:
 * **TotalCharges**: the higher the total charges, the longer the "tenure" (as expected).
 
 #### 2. What would we characterize as the "warning signs" that a customer may discontinue service?
-I would recommend paying particular attention to customers that don't have a partner, those with children, and maybe senior citizens.
+* I would say, customers that are not married or don't have a partner.
+* Customers without children.
+* Senior citizens.
 
 #### 3. What actions would you recommend to this business to try to improve their customer retention?
 * Targeting married couples with children (not senior) may be worth trying as a marketing/advertising strategy. *It may be that their brand strategy and marketing efforts should all be aligned to target families (couples with children).*
