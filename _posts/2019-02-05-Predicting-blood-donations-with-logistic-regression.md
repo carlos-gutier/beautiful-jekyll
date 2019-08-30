@@ -63,6 +63,7 @@ y_pred = np.full(df.made_donation_in_march_2007.shape,
 
 print(classification_report(df.made_donation_in_march_2007, y_pred))
 ```
+
 ## Check for Outliers or Collinearity with Pairplot
 ```python
 import seaborn as sns
@@ -140,6 +141,7 @@ gs = GridSearchCV(pipe, param_grid=param_grid, cv=5,
 
 gs.fit(X_train, y_train)
 ```
+
 ## Display best score and parameters
 ```python
 validation_score = gs.best_score_ # <-- BEST SCORE!
@@ -158,7 +160,7 @@ In other words, the best parameters for our logistic regression are:
 
 And so far according based on our trainning score (0.79), we are doing better than our "majority class baseline" (0.76). Moreover, this will need stand after testing our model with our test set.
 
-### Testing Our Model
+## Testing Our Model
 ```python
 test_score = gs.score(X_test, y_test)
 print('Test Score:', test_score)
@@ -167,7 +169,7 @@ print('Test Score:', test_score)
 
 As we can see, our model did not do better than our baseline. We might do better just guessing instead of going with our model.
 
-### Feature Engineering to Improve On Our Predictions
+## Feature Engineering to Improve On Our Predictions
 Many times the performance of our model does not necessarily depend on the algorithm we chose to work with, but on generating aditional useful features from the ones we already have.
 
 Early on in our process we noticed that "months_since_last_donation" had some numbers that were high, meaning there were some donors that had not come for donations in a while. Let's create a new feature that gives more weight to those that have not donated for a long time by "squaring" the values in that column.
