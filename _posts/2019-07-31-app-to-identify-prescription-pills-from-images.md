@@ -10,9 +10,7 @@ A group of developers sought to build an app with a functionality that would let
 
 **Feel free to watch demo video my working app here**:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=3dXhKcIyXTk
-" target="_blank"><img src="http://img.youtube.com/vi/3dXhKcIyXTk/0.jpg" 
-alt="Demo Video for Pill Identifier App" width="240" height="180" border="10" /></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3dXhKcIyXTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Database & API
 
