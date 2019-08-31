@@ -9,6 +9,7 @@ A group of developers sought to build an app with a functionality that would let
 *Note: The app was not fully deployed. In case you're curious [here's where it was left off](https://www.rxid.net/).*
 
 **Feel free to watch demo video my working app here**:
+
 {% include youtubePlayer.html id=page.youtubeId %}
 
 ## Database & API
