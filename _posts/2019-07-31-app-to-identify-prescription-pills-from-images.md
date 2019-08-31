@@ -8,7 +8,7 @@ A group of developers sought to build an app with a functionality that would let
 
 *Note: The app was not fully deployed. In case you're curious [here's where it was left off](https://www.rxid.net/).*
 
-**Feel free to watch demo video my working app here**:
+**Feel free to watch a demo video of my working app here**:
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3dXhKcIyXTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
