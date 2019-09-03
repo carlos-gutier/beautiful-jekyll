@@ -3,7 +3,8 @@ layout: page
 title: My Resume
 subtitle: 
 ---
-<iframe src="http://docs.google.com/gview?url=/img/CarlosG_Resume.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+<embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=/img/CarlosG_Resume.pdf" width="500" height="375">
 <!-- 
 <object data="/img/CarlosG_Resume.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="/img/CarlosG_Resume.pdf">
