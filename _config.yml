@@ -23,7 +23,9 @@ description: Data Analysis & Machine Learning
 
 # List of links in the navigation bar
 navbar-links:
+  My Resume: "resume"
   About Me: "aboutme"
+  
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
